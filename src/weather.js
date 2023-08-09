@@ -6,7 +6,7 @@ const searchInput = document.querySelector('#search')
 
 async function fetchWeatherData(){
     const searchData = searchInput.value
-    const fetchData = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=1d1b3978cfab44cfb0832028230908&q=${searchData}&days=1&aqi=no&alerts=no`)
+    const fetchData = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${process.env.api_key}&q=${searchData}&days=1&aqi=no&alerts=no`)
 
     if (fetchData.ok){
         return fetchData;
