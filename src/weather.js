@@ -1,14 +1,14 @@
 // select dom elements
 
 const searchInput = document.querySelector('#search')
-const apiKey = process.env.api_key
+const weatherApiKey = process.env.api_key
 
 
 // fetch weather data
 
 async function fetchWeatherData(){
     const searchData = searchInput.value
-    const fetchData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${searchData}&days=1&aqi=no&alerts=no`, {mode: 'cors'})
+    const fetchData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${searchData}&days=1&aqi=no&alerts=no`, {mode: 'cors'})
 
     if (fetchData.ok){
         return fetchData;
