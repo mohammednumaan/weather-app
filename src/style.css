@@ -131,7 +131,7 @@ body{
 .city-forecast-div > p{
     width: 2000px;
     transform: translateX(-2000px);
-    animation: scroll 20s infinite;
+    animation: scroll 35s infinite;
    
 }
 
