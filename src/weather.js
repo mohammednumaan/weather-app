@@ -1,8 +1,10 @@
 // select dom elements
 
 const searchInput = document.querySelector('#search')
-const weatherApiKey = process.env.api_key
 
+// api key
+
+const weatherApiKey = process.env.api_key
 
 // fetch weather data
 
