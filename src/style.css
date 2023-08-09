@@ -1,0 +1,147 @@
+/* BODY */
+
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url('../assets/pixel-font.ttf');
+}
+
+/* HEADER */
+
+.header-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-height: 100px;
+    padding: 10px;
+
+    color: #F2AA4CFF;
+    background-color: #101820FF;
+    font-family: pixel;
+}
+
+
+/* SEARCH */
+
+.search-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    margin-top: 0px;
+    background-color: #F2AA4CFF;
+}
+
+#search{
+
+    width: 200px;
+    padding: 10px;
+
+    border: 2px solid #101820FF;
+    border-radius: 10px;
+
+    font-family: pixel;
+    color: #F2AA4CFF;
+
+}
+
+::placeholder{
+
+    color: #F2AA4CFF;
+}
+
+#search-button{
+
+    font-family: pixel;
+    font-weight: 800;
+    font-size: 20px;
+
+    width: 200px;
+    padding: 5px;
+
+    border: 2px solid #101820FF;
+    border-radius: 10px;
+
+    color: #F2AA4CFF;
+
+}
+
+
+/* MAIN */
+
+.main-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: 37.3rem;
+    background-color: #F2AA4CFF;
+
+}
+
+#error-message{
+
+    font-family: pixel;
+    font-weight: 800;
+    color: #101820FF;
+    display: none;
+}
+
+/* MAIN DIV */
+.main-div{
+
+    width: 500px;
+    height: 300px;
+    margin-top: -100px;
+    padding: 20px;
+
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #101820FF;
+    color: #F2AA4CFF;
+
+    font-family: pixel;
+    
+}
+
+.city-forecast-div{
+    display: inline;
+    width: 500px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #101820FF;
+    color: #F2AA4CFF;
+    font-family: pixel;
+    padding: 7px;
+    overflow: hidden;
+}
+
+.city-forecast-div > p{
+    width: 2000px;
+    transform: translateX(-2000px);
+    animation: scroll 20s infinite;
+   
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(500px);
+
+    }
+    to{
+        transform: translateX(-2000px);
+    }
+}
+
