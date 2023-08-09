@@ -105,7 +105,7 @@ body{
     width: 500px;
     height: 300px;
     margin-top: -100px;
-    padding: 20px;
+    padding: 30px;
 
     border: 2px solid white;
     border-radius: 15px;
@@ -113,10 +113,12 @@ body{
     color: #F2AA4CFF;
 
     font-family: pixel;
+    margin-top: 20px;
     
 }
 
-.city-forecast-div{
+.city-forecast-div,
+.gif-temp{
     display: inline;
     width: 500px;
     height: 50px;
@@ -134,6 +136,28 @@ body{
     transform: translateX(-2000px);
     animation: scroll 35s infinite;
    
+}
+
+#toggle-button{
+
+    border: 3px solid #F2AA4CFF;
+    border-radius: 10px;
+
+    background-color: #101820FF;
+    color: #F2AA4CFF;
+
+    font-family: pixel;
+    font-weight: 800;
+
+    padding: 5px;
+
+    box-shadow: 0 9px #F2AA4CFF;
+
+}
+
+#toggle-button:active{
+    box-shadow: 0 5px #3B444B;
+    transform: translateY(4px);
 }
 
 @keyframes scroll{
